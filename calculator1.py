@@ -1,11 +1,11 @@
 from tkinter import *
 
 win = Tk()
-win.option_add("*font","Consolas 14")
+win.option_add("*font","Consolas 20")
 
 f = Frame(win)
-w=3   # Buttonbreite
-h=1   # Buttonhöhe
+w=4   # Buttonbreite
+h=2   # Buttonhöhe
 
 def taste(t):
     anzeige.config(state="normal")
@@ -55,7 +55,7 @@ btnkl2 = Button(text=")", width=w, height=h, command=lambda:taste(")"))
 btn0 = Button(text="0", width=w, height=h, command=lambda:taste("0"))
 btnkomma = Button(text=".", width=w, height=h, command=lambda:taste("."))
 btnenter = Button(text="=", width=w, height=h, command=berechnen)
-btnclr = Button(text="CE", width=w, height=h, bg="red", command=clear)
+btnclr = Button(text="CE", width=w, height=h, command=clear)
 
 btn7.grid(column=0, row=1) 
 btn8.grid(column=1, row=1) 
